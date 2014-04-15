@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Week 10 Video | Bootstrap Practice</title>
+		<!--Scripts-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="scripts.js"></script>
+		<!--Styles-->
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="styles.css">
+
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><strong>LUNA PARK at CONEY ISLAND</strong></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Rides <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#cyclone">Cyclone</a>
+								</li>
+								<li>
+									<a href="#wonder-wheel">Wonder Wheel</a>
+								</li>
+								<li>
+									<a href="#parachute">Parachute Jump</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#"><img style="width:30px; opacity: 0.5;" onmouseover="this.style.opacity=.8;this.filters.alpha.opacity=80" onmouseout="this.style.opacity=0.5;this.filters.alpha.opacity=5" src="images/social/facebook.jpg" /></a>
+						</li>
+						<li>
+							<a href="#"><img style="width:30px; opacity: 0.5;" onmouseover="this.style.opacity=.8;this.filters.alpha.opacity=80" onmouseout="this.style.opacity=0.5;this.filters.alpha.opacity=5" src="images/social/twitter.jpeg" /></a>
+						</li>
+						<li>
+							<a href="#"><img style="width:30px; opacity: 0.5;" onmouseover="this.style.opacity=.8;this.filters.alpha.opacity=80" onmouseout="this.style.opacity=0.5;this.filters.alpha.opacity=5" src="images/social/linkedin.jpg" /></a>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container">
+
+			<!--			<h1>Coney Island Rides</h1>-->
+
+			<div class="row">
+				<div class="col-md-5">
+					<a name="cyclone"></a><h3>Cyclone</h3>
+					<p>
+						The Cyclone is a historic wooden roller coaster that opened on June 26, 1927 in the Coney Island section of Brooklyn, New York City.
+					</p>
+					<p>
+						<!-- Button trigger modal -->
+						<button class="btn btn-success btn-lg btn-cyclone">
+							See it!
+						</button>
+					</p>
+				</div>
+				<div class="image col-md-7">
+					<img class="img-responsive" src="images/cyclone.jpg" />
+				</div>
+			</div><!--End Row-->
+
+			<div class="row">
+				<div class="col-md-5">
+					<a name="wonder-wheel"></a><h3>Wonder Wheel</h3>
+					<p>
+						The Wonder Wheel is a 150-foot tall eccentric Ferris wheel located at Deno's Wonder Wheel Amusement Park at Coney Island.
+					</p>
+					<p>
+						<!-- Button trigger modal -->
+						<button class="btn btn-success btn-lg btn-wheel">
+							See it!
+						</button>
+					</p>
+				</div>
+				<div class="col-md-7">
+					<img class="img-responsive" src="images/wonder-wheel.jpg" />
+				</div>
+			</div><!--End Row-->
+
+			<div class="row">
+				<div class="col-md-5">
+					<a name="parachute"></a><h3>Parachute Jump</h3>
+					<p>
+						The Parachute Jump is a defunct amusement ride whose iconic open-frame steel structure remains a Brooklyn landmark. 250 feet tall and weighing 170 tons, it has been called the "Eiffel Tower of Brooklyn".
+					</p>
+					<p>
+						<!-- Button trigger modal -->
+						<button class="btn btn-success btn-lg btn-para">
+							See it!
+						</button>
+					</p>
+				</div>
+				<div class="col-md-7">
+					<img class="image img-responsive" src="images/parachute.jpg" />
+				</div>
+			</div><!--End Row-->
+		</div><!--End main container-->
+
+		<!-- Modals -->
+
+		<!-- Modal: Cyclone -->
+		<div class="modal fade" id="cycloneModal" tabindex="-1" role="dialog" aria-labelledby="cycloneModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close close-window" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="cycloneModalLabel">Riding the Cyclone</h4>
+					</div>
+					<div class="modal-body cyclone-body">
+						<!--Video markup here<iframe width="100%" height="400px" src="http://www.youtube.com/embed/lxSCNto21mU?html5=1" frameborder="0" allowfullscreen></iframe>-->
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default close-window" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal: Wonder Wheel -->
+		<div class="modal fade" id="wheelModal" tabindex="-1" role="dialog" aria-labelledby="wheelModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close close-window" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="wheelModalLabel">Riding the Wonder Wheel</h4>
+					</div>
+					<div class="modal-body wheel-body">
+						<!--Video markup here<iframe width="100%" height="400px" src="http://www.youtube.com/embed/OK25N1Pw14w?html5=1" frameborder="0" allowfullscreen></iframe>-->
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default close-window" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal: Parachute Jump -->
+		<div class="modal fade" id="paraModal" tabindex="-1" role="dialog" aria-labelledby="paraModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close close-window" data-dismiss="modal" aria-hidden="true">
+							&times;
+						</button>
+						<h4 class="modal-title" id="paraModalLabel">Climbing the Parachute Jump</h4>
+					</div>
+					<div class="modal-body para-body">
+						<!--Video markup here<iframe width="100%" height="400px" src="http://www.youtube.com/embed/SIR0jxqfl4c?html5=1" frameborder="0" allowfullscreen></iframe>-->
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default close-window" data-dismiss="modal">
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

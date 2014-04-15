@@ -1,0 +1,8 @@
+.row {
+	margin-bottom: 20px;
+}
+.navbar-default .navbar-brand {
+	color: #000;
+	font-style: italic;
+	font-size: 23px;
+}
